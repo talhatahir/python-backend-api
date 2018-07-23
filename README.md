@@ -1,6 +1,6 @@
 # python-backend-api
 This is a Python practice project using Python Django Rest API Framework which contains the following Model Entites: 
-
+```
 class images(models.Model):
     image_url = models.CharField(max_length=150)
         
@@ -18,7 +18,7 @@ class listings(models.Model):
     listing_id=models.IntegerField()
     image =  models.ForeignKey(images, on_delete=models.CASCADE,related_name='image') 
     user =  models.ForeignKey(users, on_delete=models.CASCADE)   
-    
+ ```   
     
 This API is powering data for a front-end React App
   
